@@ -1,0 +1,11 @@
+{
+    "name": "dropdownList",
+    "version": "1.0.0",
+    "files": [
+      "dropdown",
+      "dropDownList",
+      "animations",
+      "title"
+    ]
+    
+  }

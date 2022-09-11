@@ -1,0 +1,84 @@
+    body {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+@keyframes slideDown {
+    0% { 
+      margin-top: -70%;
+      opacity: 0;
+      transform: translateY(-60px);
+    }
+    70% { 
+        transform: translateY(-59px);
+      }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+      margin-top: 0;
+    }
+  }
+.dropdown-item {
+    animation: slideDown 700ms ease-in-out forwards;
+    background-color: white;
+    color : black;
+}
+.dropdown-item:hover {
+    color: #fff;
+    background: linear-gradient(90deg, #000000, #3d3d3d);
+
+
+    /* -webkit-animation: AnimationName 55s ease-in-out forwards;
+    -moz-animation: AnimationName 55s ease-in-out forwards;
+    -o-animation: AnimationName 55s ease-in-out forwards;*/ 
+    animation: slideDown, AnimationName 200ms  forwards;
+}
+
+@keyframes out {
+    0% { 
+      opacity: 1;
+      transform: translateY(0);
+      margin-top: -5%;
+    }
+    50% {
+        transform: translateY(-55px);
+        opacity: 0;
+      }
+    75% {
+        margin-top: -75%;
+        max-height: 1em;
+        opacity: 0;
+    }
+    100% {
+      max-height: 1px;
+      opacity: 0;
+      transform: translateY(-60px);
+    }
+  }
+.out-item {
+    animation: out 400ms ease-in-out forwards;
+}
+
+
+
+/* @-webkit-keyframes AnimationName {
+    0%{background-position:0% 49%}
+    100%{background-position:0% 100%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 49%}
+    100%{background-position:0% 100%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 49%}
+    100%{background-position:0% 100%}
+} */
+@keyframes AnimationName {
+    0%{background: linear-gradient(90deg, #000000, #ffffff, #ffffff , #ffffff)}
+    
+    50%{background: linear-gradient(90deg, #000000, #1f1f1f , #575757,  #ffffff)}
+    
+    99%{background: linear-gradient(90deg, #000000, #000000 ,  #313131)}
+    100%{
+        background: #000000;
+    }
+}
